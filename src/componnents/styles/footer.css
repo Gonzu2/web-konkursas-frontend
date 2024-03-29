@@ -1,0 +1,49 @@
+.footer {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 15px;
+    font-size: 16px;
+
+    background-color: #191919;
+
+    position: fixed;
+    bottom: 0;
+    width: 100dvw;
+
+    gap: 10px;
+}
+
+.footer li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    color: white;
+}
+
+.footer li span {
+    background: -webkit-linear-gradient(45deg, #f3ec78, #ca4269);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logout-button {
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    background: white;
+    border: none;
+    font-size: 16px;
+    transition: background 0.15s linear;
+}
+
+.logout-button:hover {
+    background: rgb(123, 187, 240);
+}
