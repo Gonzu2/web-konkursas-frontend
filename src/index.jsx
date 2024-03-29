@@ -9,20 +9,17 @@ import Login from './componnents/Login';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ChatHistory from './componnents/ChatHistory';
-import NewChat from './componnents/NewChat';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/main" element={<Main />} />
-        <Route path="/history" element={<ChatHistory />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/main" element={<Main />} />
+      <Route path="/history" element={<ChatHistory />} />
+    </Routes>
+    <Footer />
+  </BrowserRouter>
 );

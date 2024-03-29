@@ -8,11 +8,137 @@
     align-items: center;
     flex-direction: column;
 
+    box-sizing: border-box;
+
     padding: 50px;
 
-    
+    font-family: "Montserrat", sans-serif;
 }
+
+.chat-container {
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+
+    gap: 15px;
+}
+
+.chat-box {
+    min-width: 950px;
+    width: 50%;
+    height: 90%;
+    background-color: rgba(221, 217, 217, 0.651);
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+
+    list-style: none;
+
+    border-radius: 10px;
+
+    padding: 15px;
+}
+
+.chat-box li p {
+    margin: 0;
+}
+
+.chat-box li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-box {
+    min-width: 950px;
+    width: 50%;
+    border-radius: 10px;
+    padding: 15px;
+
+    border: 1px solid black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.submit-box {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    transition: background 0.15s linear;
+}
+
+.submit-box:hover {
+    background: rgb(123, 187, 240);
+}
+
+@media screen and (width <=1650px) {
+    .chat-box {
+        width: 70%;
+    }
+
+    .input-box {
+        width: 70%;
+    }
+}
+
+@media screen and (width <=900px) {
+    .chat-box {
+        min-width: 400px;
+        width: 85%;
+    }
+
+    .input-box {
+        min-width: 400px;
+        width: 85%;
+    }
+}
+
+@media screen and (width <=500px) {
+    .chat-box {
+        min-width: 250px;
+        width: 95%;
+    }
+
+    .input-box {
+        min-width: 250px;
+        width: 95%;
+    }
+}
+
+
 
 h1 {
     margin: 0;
+}
+
+.loader {
+    width: 128px;
+    height: 128px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
